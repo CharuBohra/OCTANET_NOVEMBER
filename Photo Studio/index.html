@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framed Memories</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <script>
+    $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+            scrollTop: target.offset().top
+            }, 1000);
+        }
+        });
+    });
+    </script>
+
+</head>
+<body>
+    <section id="navigationbar">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-2 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" style="color: white;" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+                    <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                    <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg>
+                <span class="fs-4"> Framed Memories</span>
+              </a>
+        
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <button type="button" class="btn btn-light btn-lg px-4 ms-2 me-md-2" style="font-size: 15px;padding: 5px;"><a href="#contact" class="nav-link-color">Contact Us</a></button>
+              </ul>
+            </header>
+          </div>
+    </section>
+    <section id="title">
+        <div class="container col-xxl-8 px-8 py-10 mt-5">
+            <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
+                <br><br><br>
+                <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assests/images/camera.png" class="d-block mx-lg-auto img-fluid" alt="Photography" width="500" height="1500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis-head lh-1 mb-3" style="font-size: 45px;">Preserve Your Memories</h1>
+                    <p class="lead mb-3"><strong>A photograph is the pause button of life.Because every picture has a story to tell.Capture and cherish your special moments with Framed Memories.</strong></p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="features">
+        <div class="container px-4 py-3" id="featured-3">
+            <h2 class="pb-2 border-bottom" style="text-align: center; font-size: 50px;color: #368ab9;font-family: 'Times New Roman', Times, serif;">Why we stand out</h2>
+            <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                      </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis-heading">Professional Photographers</h3>
+                <p style="font-size: 22px;">Our team of highly skilled and experienced photographers ensures that every photograph is captured with precision, creativity, and attention to detail.</p>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                      </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis-heading">High-Quality Prints</h3>
+                <p style="font-size: 22px;">We use the finest materials and printing techniques to ensure that your photographs and prints are of the highest quality, ensuring their longevity and beauty.</p>
+              </div>
+              <div class="feature col">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                      </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis-heading">Customization Options</h3>
+                <p style="font-size: 22px;">We offer a range of customization options for our products, allowing you to personalize your photographs and prints to suit your style and preferences.</p>
+              </div>
+            </div>
+          </div>
+          
+    </section>
+    <section id="services" class="bg-dark mb-4">
+        <div class="bg-dark text-secondary px-4 py-2 text-center">
+            <div class="py-2">
+              <h1 class="display-5 fw-bold text-white" style="font-family: serif;font-size: 55px;">Services</h1>
+              <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4" style="font-family: sans-serif;font-size: 30px;">At Framed Memories, we offer a wide range of photography services to capture the 
+                    moments that matter most to you. Our experienced team of professional photographers is dedicated to providing you 
+                    with high-quality images that you'll cherish for a lifetime.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-2">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assests/images/weddingvarmala.jpeg" class="d-block mx-lg-auto custom-image" alt="Wedding Photography" width="400" height="300" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis mb-3" style="color: #de4261;">Wedding Photography</h1>
+                <p class="lead" style="color: whitesmoke;font-size: 20px;"> Our wedding photography service is tailored to make your special 
+                    day unforgettable. We work discreetly to ensure that we capture every candid smile, 
+                    heartfelt exchange, and stunning detail, all while letting you enjoy the celebration to the fullest. </p>
+              </div>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-4">
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assests/images/potraits.jpeg" class="d-block mx-lg-auto custom-image" alt="Wedding Photography" width="400" height="300" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #de4261;">Family Potraits</h1>
+                <p class="lead" style="color: whitesmoke;font-size: 20px;">Family is where life begins and love never ends. At Framed Memories,
+                     we specialize in capturing the beauty and warmth of your family bonds through our family portrait sessions. Whether it's
+                      a playful outdoor shoot or a cozy indoor setup, our experienced photographers are dedicated to creating timeless
+                       memories that reflect the love, laughter, and uniqueness of your family. </p>
+              </div>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-4">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assests/images/eventphto.jpeg" class="d-block mx-lg-auto custom-image" alt="Wedding Photography" width="400" height="300" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #de4261;">Gathering</h1>
+                <p class="lead" style="color: whitesmoke;font-size: 20px;">Events are milestones in our lives, filled with unforgettable
+                     moments and emotions. We specialize in event photography to ensure that these special occasions are 
+                     captured with precision and creativity. Whether it's a wedding, birthday celebration, corporate gathering, or any other event. </p>
+              </div>
+            </div>
+          </div>
+          <div class="container col-xxl-8 px-4 py-4">
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assests/images/birdphoto.jpeg" class="d-block mx-lg-auto custom-image" alt="Wedding Photography" width="400" height="300" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #de4261;">Wild Photography</h1>
+                <p class="lead" style="color: whitesmoke;font-size: 20px;">Nature's beauty is unparalleled, and our wildlife photography service 
+                     is dedicated to capturing the stunning and untamed world around us. Whether it's majestic landscapes, magnificent creatures in their 
+                     habitats, or the intricate details of flora and fauna. Explore the wild with us, and let our photographs bring the
+                      wilderness to your doorstep."</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="button" class="btn btn-light btn-lg px-4 ms-2 me-md-2 mx-auto mb-5 py-3 px-4"><a href="#contact" class="nav-link-color">Contact Us</a></button> 
+          </div>
+    </section>
+    <section id="about">
+        <div class="px-4 py-0 my-0 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis-heading">About</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4" style="font-weight: 400;">Discover Our Passion for Photography. Meet the Team Behind the Lens</p>
+            </div>
+        </div>
+        <div class="container col-xxl-8 px-4 py-0 mb-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-2 mb-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./assests/images/about.png" class="d-block mx-lg-auto custom-img" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-4 fw-bold text-body-emphasis-heading lh-1 mb-3">Our Studio</h1>
+                <p class="lead-white" style="font-weight: 400;">Welcome to Framed Memories: Where Passion, Creativity, and Expertise Merge to Bring Your Moments to Life.
+                     Our Journey in Photography Is a Tale of Dedication, Artistry, and Commitment. Meet Our Team of Skilled Photographers, 
+                     Each Driven by a Deep Love for Capturing the Essence of Life's Most Precious Moments. As Your Trusted Photography Studio, 
+                     We Strive to Preserve Your Memories with Artistry, Unveiling the Beauty of Each Shot. 
+                     Join Us on This Visual Odyssey, Where Every Click Unfolds a Unique Story.</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section id="caraousel" class="bg-dark">
+        <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assests/images/popvarmala.png" class="d-block w-100" alt="wedding" width="1000px" height="800px">
+              </div>
+              <div class="carousel-item">
+                <img src="./assests/images/eventphoto.png" class="d-block w-100" alt="event">
+              </div>
+              <div class="carousel-item">
+                <img src="./assests/images/potraits.png" class="d-block w-100" alt="potrait">
+              </div>
+              <div class="carousel-item">
+                <img src="./assests/images/event.png" class="d-block w-100" alt="event">
+              </div>
+              <div class="carousel-item">
+                <img src="./assests/images/hillside.png" class="d-block w-100" alt="wedding">
+              </div>
+              <div class="carousel-item">
+                <img src="./assests/images/animalphoto.png" class="d-block w-100" alt="animal">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+    </section>
+    <section id="contact">
+        <div class="px-4 py-2 my-2 text-center mt-5 pt-5">
+            <h1 class="display-5 fw-bold text-body-emphasis-heading">Contact Us</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead-white mb-4" style="font-weight: 400;">Feel free to get in touch with us using the contact form below. 
+                We're here to answer any questions you may have and assist you in scheduling your photography sessions.
+                 Whether it's about our services, pricing, availability, or any specific requests, we're eager to hear from you.
+                 Your moments matter, and we're committed to helping you capture them beautifully. Let's connect and create memories together.</p>
+            </div>
+        </div>
+        <div class="container center-form container-margin">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label" style="font-size: 25px;">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text" style="font-size: 18px;">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" style="font-size: 25px;">Phone Number</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1" maxlength="12">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 20px;">Check me out</label>
+                </div>
+                    <button type="submit" class="btn btn-primary" style="padding-left:15px; padding-right: 15px; font-size: 20px;">Submit</button>
+            </form>
+          </div>
+    </section>      
+    <section id="footer" class="bg-dark">
+        <div class="container p-4" style="color: white;font-size: 18px;">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">About Framed Memories</h5>
+      
+                <p>
+                    Framed Memories is a photography studio that specializes in capturing cherished moments and
+                     creating lasting memories through the art of photography. 
+                </p>
+      
+                <p>
+                    We believe in the power of photography to tell stories, evoke emotions, and freeze time.
+                     We're passionate about our work and are here to help you capture the essence of your life's most meaningful experiences.
+                </p>
+      
+                <div class="mt-4">
+                  <!-- Facebook -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                  <!-- Google + -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 pb-1">Any Queries</h5>
+    
+      
+                <ul class="fa-ul" style="margin-left: 1.65em;">
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Shimoga, Karnataka, India</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">framedstudios@gmail.com</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+91 9663047565</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">08182- 260556</span>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0" style=" color: white;">
+                <h5 class="text-uppercase mb-4">Opening hours</h5>
+      
+                <table class="table text-center text-white" style="background-color: black;">
+                  <tbody class="font-weight-normal">
+                    <tr>
+                      <td>Mon - Thu:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Fri - Sat:</td>
+                      <td>8am - 7pm</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday:</td>
+                      <td>9am - 2pm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom script for initializing the carousel -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new bootstrap.Carousel(document.querySelector("#carouselExample"));
+        });
+    </script>
+</body>
+</html>
